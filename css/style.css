@@ -3,15 +3,41 @@
 
 a{
 	box-shadow: inset 0 -3px 0px 0px #2eec96  ;
+    color: #322f30;
 }
 
 a:hover{
 	box-shadow: inset 0 -25px 0px 0px #2eec96  ;
 	transition: all .2s ease-in-out;
+    color: #322f30;
+}
+
+.navbar {
+    border-left: 0;
+    overflow: hidden;
+    background-color: #322f30;
+    position: fixed;
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+ 
+.navbar a{
+    box-shadow: inset 0 -3px 0px 0px #2eec96  ;
+    color: #fff;
+}
+
+.navbar a:hover{
+    box-shadow: inset 0 -25px 0px 0px #2eec96  ;
+    transition: all .2s ease-in-out;
+    color: #fff;
 }
 
 body{
 	font-family: 'Crimson Text', serif;
+    padding-top:100px;
 }
 
 .footer-social-icons {
@@ -123,10 +149,6 @@ body{
 	font-weight: 200;
 	line-height: 1;
 	margin-bottom: 0;
-}
-
-.default-text{
-
 }
 
 .fullstop{
