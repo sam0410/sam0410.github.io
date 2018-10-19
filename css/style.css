@@ -180,11 +180,17 @@ body{
 }
 
 
-#content { margin-left: -.051em; }  
+#content { margin-left: -.051em;}  
  
 .expandable {
   background: #fff;
   margin-left: -.051em;
   overflow: hidden;
+  height: 0;
   transition: all .5s ease-in-out;
  }
+  .expandable:target {
+  height: auto;
+}
+ 
+
