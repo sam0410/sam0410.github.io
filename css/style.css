@@ -151,6 +151,14 @@ body{
 	margin-bottom: 0;
 }
 
+.default-text{
+    margin-left: -.051em;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
 .fullstop{
 	color:#2eec96;
 	font-weight: 900;
