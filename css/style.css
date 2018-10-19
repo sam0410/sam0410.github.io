@@ -17,10 +17,11 @@ a:hover{
     overflow: hidden;
     background-color: #322f30;
     position: fixed;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 200;
     text-align: center;
     top: 0;
+    display: inline-block;
     width: 100%;
 }
  
@@ -37,13 +38,19 @@ a:hover{
 
 body{
 	font-family: 'Crimson Text', serif;
-    padding-top:100px;
+    padding-top: 100px;
+    display: flex; 
+
+}
+
+@media only screen and (max-width: 350px){
+
 }
 
 .footer-social-icons {
  	width: 350px;
     display:block;
-    margin: 0 auto;
+    margin: auto;
 }
 .fa-facebook {
     padding:10px 14px;
@@ -134,18 +141,26 @@ body{
 }
 
 .large-text{
-
 	margin-left: -.051em;
-	font-size: 10rem;
+    font-size: 10vw;
 	font-weight: 900;
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: uppercase;
 }
 
+.large-text{
+    margin-left: -.051em;
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
 .medium-text{
 	margin-left: -.051em;
-	font-size: 5rem;
+	font-size: 10vh;
 	font-weight: 200;
 	line-height: 1;
 	margin-bottom: 0;
@@ -153,7 +168,7 @@ body{
 
 .default-text{
     margin-left: -.051em;
-    font-size: 3rem;
+    font-size: 4vh;
     font-weight: 200;
     line-height: 1;
     margin-bottom: 0;
@@ -164,3 +179,12 @@ body{
 	font-weight: 900;
 }
 
+
+#content { margin-left: -.051em; }  
+ 
+.expandable {
+  background: #fff;
+  margin-left: -.051em;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+ }
