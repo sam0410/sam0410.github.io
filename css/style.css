@@ -1,21 +1,30 @@
 @charset "UTF-8";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+:root {
+  --fontcolor: #5d6d7e;
+  --hrefcolor: #2eec96;
+  --darkcolor: #5d6d7e;
+  --very-dark: black;
+  --lightfont:#afbac6;
+  --white:white;
+}
+
 a{
-	box-shadow: inset 0 -3px 0px 0px #2eec96  ;
-    color: #322f30;
+	box-shadow: inset 0 -3px 0px 0px var(--hrefcolor)  ;
+    color: var(--fontcolor);
 }
 
 a:hover{
-	box-shadow: inset 0 -25px 0px 0px #2eec96  ;
+	box-shadow: inset 0 -25px 0px 0px var(--hrefcolor) ;
 	transition: all .2s ease-in-out;
-    color: #322f30;
+    color: var(--fontcolor);
 }
 
 .navbar {
     border-left: 0;
     overflow: hidden;
-    background-color: #322f30;
+    background-color: var(--fontcolor) ;
     position: fixed;
     font-size: 4rem;
     font-weight: 200;
@@ -26,21 +35,22 @@ a:hover{
 }
  
 .navbar a{
-    box-shadow: inset 0 -3px 0px 0px #2eec96  ;
-    color: #fff;
+    box-shadow: inset 0 -3px 0px 0px var(--hrefcolor)  ;
+    color: var(--lightfont);
 }
 
 .navbar a:hover{
-    box-shadow: inset 0 -25px 0px 0px #2eec96  ;
+    box-shadow: inset 0 -25px 0px 0px var(--hrefcolor)  ;
     transition: all .2s ease-in-out;
-    color: #fff;
+    color: var(--lightfont);
 }
 
 body{
 	font-family: 'Crimson Text', serif;
-    padding-top: 100px;
-    display: flex; 
-
+    padding-top: 0px;
+    display: flex;
+    color: var(--darkcolor);
+    padding-bottom: 25px;
 }
 
 @media only screen and (max-width: 350px){
@@ -52,18 +62,6 @@ body{
     display:block;
     margin: auto;
 }
-.fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-facebook:hover {
-    background-color: #2eec96;
-}
 
 .fa-medium{
     padding:10px 14px;
@@ -72,11 +70,13 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: var(--hrefcolor);
+    color:var(--very-dark) ;
 }
 
 .fa-medium:hover {
-    background-color: #2eec96;
+    background-color: var(--very-dark);
+    color: var(--white);
 }
 
 .fa-github {
@@ -86,10 +86,12 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: var(--hrefcolor);
+    color:var(--very-dark) ;
 }
 .fa-github:hover {
-    background-color: #2eec96;
+    background-color: var(--very-dark);
+    color: var(--white);
 }
 
 .fa-linkedin {
@@ -99,10 +101,12 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: var(--hrefcolor);
+    color:var(--very-dark) ;
 }
 .fa-linkedin:hover {
-    background-color: #2eec96;
+    background-color: var(--very-dark);
+    color: var(--white);
 }
 
 .fa-envelope {
@@ -112,11 +116,13 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: var(--hrefcolor);
+    color:var(--very-dark) ;
 }
 
 .fa-envelope:hover {
-    background-color: #2eec96;
+    background-color: var(--very-dark);
+    color: var(--white);
 }
 
 .fa-facebook {
@@ -126,10 +132,12 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: var(--hrefcolor);
+    color:var(--very-dark) ;
 }
 .fa-facebook:hover {
-    background-color: #2eec96;
+    background-color: var(--very-dark);
+    color: var(--white);
 }
 
 .social-icon {
@@ -144,25 +152,18 @@ body{
 	margin-left: -.051em;
     font-size: 10vw;
 	font-weight: 900;
-	line-height: 1;
 	margin-bottom: 0;
-	text-transform: uppercase;
-}
-
-.large-text{
-    margin-left: -.051em;
-    font-size: 10vw;
-    font-weight: 900;
     line-height: 1;
-    margin-bottom: 0;
-    text-transform: uppercase;
+	text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--very-dark);
 }
 
 .medium-text{
 	margin-left: -.051em;
 	font-size: 10vh;
 	font-weight: 200;
-	line-height: 1;
+	line-height: 1.4;
 	margin-bottom: 0;
 }
 
@@ -170,12 +171,12 @@ body{
     margin-left: -.051em;
     font-size: 4vh;
     font-weight: 200;
-    line-height: 1;
+    line-height: 1.4;
     margin-bottom: 0;
 }
 
 .fullstop{
-	color:#2eec96;
+	color:var(--hrefcolor);
 	font-weight: 900;
 }
 
@@ -187,7 +188,7 @@ body{
   margin-left: -.051em;
   overflow: hidden;
   height: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
  }
   .expandable:target {
   height: auto;
