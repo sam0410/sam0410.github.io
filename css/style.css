@@ -16,35 +16,10 @@ a{
 }
 
 a:hover{
-	box-shadow: inset 0 -25px 0px 0px var(--hrefcolor) ;
+	box-shadow: inset 0 -0.5em 0px 0px var(--hrefcolor) ;
 	transition: all .2s ease-in-out;
     color: var(--fontcolor);
 }
-
-.navbar {
-    border-left: 0;
-    overflow: hidden;
-    background-color: var(--fontcolor) ;
-    position: fixed;
-    font-size: 4rem;
-    font-weight: 200;
-    text-align: center;
-    top: 0;
-    display: inline-block;
-    width: 100%;
-}
- 
-.navbar a{
-    box-shadow: inset 0 -3px 0px 0px var(--hrefcolor)  ;
-    color: var(--lightfont);
-}
-
-.navbar a:hover{
-    box-shadow: inset 0 -25px 0px 0px var(--hrefcolor)  ;
-    transition: all .2s ease-in-out;
-    color: var(--lightfont);
-}
-
 body{
 	font-family: 'Crimson Text', serif;
     padding-top: 0px;
@@ -55,12 +30,6 @@ body{
 
 @media only screen and (max-width: 350px){
 
-}
-
-.footer-social-icons {
- 	width: 350px;
-    display:block;
-    margin: auto;
 }
 
 .fa-medium{
@@ -138,14 +107,6 @@ body{
 .fa-facebook:hover {
     background-color: var(--very-dark);
     color: var(--white);
-}
-
-.social-icon {
-    color: #fff;
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
 }
 
 .large-text{
