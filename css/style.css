@@ -155,4 +155,14 @@ body{
   height: auto;
 }
  
+ .parallaxIntro {
+  background-image: url('../images/sam0410.jpg');
+  height: 55%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
