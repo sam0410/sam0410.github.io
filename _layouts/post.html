@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ page.title }}</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width" />
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+<h1 class="large-text" id="home">{{ page.title }}<span class="fullstop">.</span></h1><h5 class="default-text"> <span class="fullstop">{{ page.date | date_to_string }}</span>
+</h5>
+<br>
+
+
+<div class= "default-text" id="content"> 
+{{ content }}
+</div>
+
+</div>
+<footer>
+<div class= "quote">{{ page.quote }}</div>
+</footer>
+</body>
+</html>
