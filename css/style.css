@@ -119,6 +119,16 @@ body{
     font-family: 'Titillium Web', sans-serif;
     color: var(--very-dark);
 }
+.blog-large-text{
+  margin-left: -.051em;
+    font-size: 5vw;
+  font-weight: 500;
+  margin-bottom: 0;
+    line-height: 1;
+    color:var(--very-dark);
+  text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
 
 .medium-text{
 	margin-left: -.051em;
@@ -136,11 +146,30 @@ body{
     margin-bottom: 0;
 }
 
+.date-text{
+    margin-left: -.051em;
+    font-size: 4vh;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 0;
+    color:var(--hrefcolor);
+}
+
+.quote-text{
+    margin-left: -.051em;
+    color:var(--hrefcolor);
+    font-size: 4vh;
+    font-weight: 100;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
 .fullstop{
 	color:var(--hrefcolor);
 	font-weight: 900;
 }
 
+hr { background-color: var(--lightfont); height: 2px; border: 0; }
 
 #content { margin-left: -.051em;}  
  
