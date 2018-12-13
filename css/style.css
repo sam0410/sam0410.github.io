@@ -120,14 +120,9 @@ body{
     color: var(--very-dark);
 }
 .blog-large-text{
-  margin-left: -.051em;
-    font-size: 5vw;
-  font-weight: 500;
-  margin-bottom: 0;
-    line-height: 1;
-    color:var(--very-dark);
-  text-transform: uppercase;
-    font-family: 'Titillium Web', sans-serif;
+text-align: center;
+  font-size: 15vh;
+  font-weight: 900;
 }
 
 .medium-text{
@@ -183,7 +178,16 @@ hr { background-color: var(--lightfont); height: 2px; border: 0; }
   .expandable:target {
   height: auto;
 }
- 
+ul{
+color: (--hrefcolor);
+}
+
+ul li::before {
+  font-weight: 900;
+  display: inline-block; 
+  margin-left: -1em;
+}
+
  .parallaxIntro {
   background-image: url('../images/sam0410.jpg');
   height: 55%; 
@@ -195,3 +199,36 @@ hr { background-color: var(--lightfont); height: 2px; border: 0; }
   background-size: cover;
 }
 
+ .parallaxBlog {
+  background-image: url('../images/sam0410Blog.jpg');
+  height: 60%; 
+
+  /* Create the parallax scrolling effect */
+   min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax , .parallaxBlog {
+        background-attachment: scroll;
+    }
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.blog-text-box{
+  height: 600px;
+  padding: 50px;
+}
+#headerBlog{
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 200px;
+}
