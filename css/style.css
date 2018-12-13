@@ -232,3 +232,27 @@ ul li::before {
   top: 200px;
   left: 200px;
 }
+
+blockquote {
+  background: #f9f9f9;
+      font-size: 4vh;
+    font-weight: 200;
+}
+blockquote:before {
+  color: var(--hrefcolor);
+  content: "\201C";
+    font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
