@@ -197,6 +197,7 @@ ul li::before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
  .parallaxBlog {
@@ -204,12 +205,15 @@ ul li::before {
   height: 60%; 
 
   /* Create the parallax scrolling effect */
-   min-height: 500px; 
+    min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    margin-left: 0;
+    margin-right: 0;
     margin: 0;
+    right:0;
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -226,11 +230,17 @@ ul li::before {
   height: 600px;
   padding: 50px;
 }
+
+.blog-container{
+  width: 100%;
+}
+
 #headerBlog{
   position: absolute;
-  z-index: 1000;
   top: 200px;
   left: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 blockquote {
